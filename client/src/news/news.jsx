@@ -1,9 +1,5 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import '../main.css'
-import Body from '../body/body.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter, useSearchParams } from 'react-router-dom';
+import { useSearchParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import './news.css'
 import PageSwitch from '../pageSwitch/pageSwitch.jsx'

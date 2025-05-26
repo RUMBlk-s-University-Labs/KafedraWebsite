@@ -1,6 +1,3 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import Body from '../body/body.jsx'
 import '../main.css'
 import './contacts.css'
 

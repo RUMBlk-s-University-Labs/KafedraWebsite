@@ -1,4 +1,3 @@
-import '../main.css'
 import './article.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState } from 'react';
