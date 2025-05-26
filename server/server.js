@@ -1,12 +1,10 @@
 const express = require("express");
-const cors = require("cors");
 const path = require("path");
 const fs = require('fs');
 const { Pool } = require("pg");
 require("dotenv").config();
 
 const app = express();
-app.use(cors());
 app.use(express.json());
 
 const pool = new Pool(
@@ -98,4 +96,4 @@ app.get('*', (req, res) => {
 })
 
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`Сервер на порті ${PORT}`));
+app.listen(PORT, () => console.log(`Сервер успішно завантажено! Порт: ${PORT}`));
