@@ -7,7 +7,7 @@ function Article({id, date, title, content, page=1}) {
   const [showImage, setShowImage] = useState(true);
   document.title = `${title} | Кафедра суспільних наук НУ "Освітній Простір"`;
   return (
-    <div>
+    <div className='w-100'>
       <div className="article message-container bg-tria" id={`news_${id}`}>
           <h4 className='title text-white bg-unua'>{title}</h4>
           <h6 className='text-white bg-dua date'>Дата публікації: {new Date(date).toLocaleDateString()}</h6>

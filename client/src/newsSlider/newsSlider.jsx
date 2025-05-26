@@ -34,7 +34,8 @@ function NewsSlider() {
                     <h5>{item.title}</h5>
                     <p>Дата публікації: {new Date(item.date).toLocaleDateString()}</p>
                   </div>
-                  <button onClick={() => { location.href = `/news?article=${item.id}`;}} className="bg-tria">Докладніше</button>
+                  <button onClick={() => { location.href = `/news?article=${item.id}`;}} className="bg-tria">
+                    Докладніше</button>
                 </div>
               </div>
             </Carousel.Item>
@@ -45,3 +46,4 @@ function NewsSlider() {
   }
 
   export default NewsSlider
+  

@@ -32,7 +32,10 @@ function Gallery() {
         <div className="gallery-grid">
           {currentImages.map((src, i) => (
             <div key={i}>
-              <div className="card pointer" onClick={() => setModalImage(src)} data-bs-toggle="modal" data-bs-target="#imageModal">
+              <div className="card pointer" onClick={() => setModalImage(src)} 
+                data-bs-toggle="modal"
+                data-bs-target="#imageModal"
+              >
                 <img src={src}/>
               </div>
             </div>
@@ -41,13 +44,15 @@ function Gallery() {
         <PageSwitch page={page} pages={totalPages} goToPage={goToPage} />
   
         <div className="modal fade" id="imageModal">
-          <div className="modal-dialog modal-dialog-centered modal-sm modal-md modal-lg modal-xl modal-xxl">
+          <div className="modal-dialog modal-dialog-centered
+           modal-sm modal-md modal-lg modal-xl modal-xxl">
             <div className="modal-content bg-unua rounded-0">
               <div className="modal-body text-center">
                 {modalImage && <img src={modalImage} className="img-fluid" />}
               </div>
               <div className="modal-footer justify-content-center">
-                <button type="button" className="btn bg-tria" data-bs-dismiss="modal">Закрити</button>
+                <button type="button" className="btn bg-tria" data-bs-dismiss="modal">
+                  Закрити</button>
               </div>
             </div>
           </div>

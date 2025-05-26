@@ -28,14 +28,17 @@ function News() {
       fetch(`/api/news/${reqArticle}`)
       .then((res) => res.json())
       .then((data) => setArticle(data))
-      .catch(() => setArticle({ error: "Новину не знайдено" }));
+      .catch(() => setArticle(
+        { title: "Помилка",
+          date: Date.now(),
+          content: "Новину не знайдено"
+        }));
     }
   }, [reqArticle, page]);
 
   const goToPage = (p) => {
     setSearchParams({ page: p });
   };
-
   
   if (article == null) {
     document.title = `Новини | Кафедра суспільних наук НУ "Освітній Простір"`;
@@ -47,12 +50,21 @@ function News() {
 
         <div className="news-grid">
           {news.map((item) => (
-            <div key={item.id} className="card pointer" onClick={() => location.href = `/news?article=${item.id}&page=${page}`}>
-              <img src={`/files/images/news_${item.id}.jpeg`} alt={item.title} onError={(e) => {e.target.src = '/files/logo.png'}}/>
+            <div key={item.id} className="card pointer" 
+              onClick={() => location.href 
+                = `/news?article=${item.id}&page=${page}`
+              }
+            >
+              <img src={`/files/images/news_${item.id}.jpeg`}
+                alt={item.title}
+                onError={(e) => {e.target.src = '/files/logo.png'}}
+              />
               <div className="card-body bg-unua text-white shadow">
                 <h5 className="card-title">{item.title}</h5>
               </div>
-              <h6 className='card-footer bg-dua text-white'>Дата публікації: {new Date(item.date).toLocaleDateString()}</h6>
+              <h6 className='card-footer bg-dua text-white'>
+                Дата публікації: {new Date(item.date).toLocaleDateString()}
+              </h6>
             </div>
           ))}
         </div>
