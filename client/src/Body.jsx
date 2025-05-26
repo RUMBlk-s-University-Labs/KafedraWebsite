@@ -1,4 +1,3 @@
-import logo from '/logo.png'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
@@ -6,7 +5,7 @@ function Body({children}) {
   return (
     <div className="d-flex flex-column min-vh-100 m-0">
       <header className="bg-unua margin fixed-top">
-        <img src={logo} className="logo pointer" alt="Logo" onClick={() => location.href="index.html"} />
+        <img src="/files/logo.png" className="logo pointer" alt="Logo" onClick={() => location.href="index.html"} />
         <div className="d-flex flex-column">
           <h1 className="text-white logo-title">Кафедра суспільних наук НУ "Освітній Простір"</h1>
           <nav className="bg-dua navbar navbar-expand-lg navbar-light bg-unua">

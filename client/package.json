@@ -10,12 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@prisma/client": "^6.7.0",
     "axios": "^1.8.4",
     "bootstrap": "^5.3.5",
-    "express": "^5.1.0",
-    "pg": "^8.15.6",
-    "prisma": "^6.7.0",
     "react": "^19.0.0",
     "react-bootstrap": "^2.10.10",
     "react-dom": "^19.0.0",
