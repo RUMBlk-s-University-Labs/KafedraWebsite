@@ -5,6 +5,7 @@ import '../main.css'
 import './contacts.css'
 
 function Contacts() {
+    document.title = `Контакти | Кафедра суспільних наук НУ "Освітній Простір"`;
     return (
         <div className='contacts-container'>
             <div>
@@ -27,10 +28,4 @@ function Contacts() {
     )
 }
 
-createRoot(document.getElementById('root')).render(
-    <StrictMode>
-        <Body>
-            <Contacts/>
-        </Body>
-    </StrictMode>,
-)
+export default Contacts

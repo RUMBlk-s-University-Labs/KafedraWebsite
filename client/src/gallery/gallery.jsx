@@ -28,6 +28,7 @@ function Gallery() {
     const totalPages = Math.ceil(images.length / limit);
     const currentImages = images.slice((page - 1) * limit, page * limit);
   
+    document.title = `Галерея | Кафедра суспільних наук НУ "Освітній Простір"`;
     return (
       <div>
         <h2 className="text-white bg-unua">Галерея</h2>
@@ -60,12 +61,4 @@ function Gallery() {
   }
   
 
-createRoot(document.getElementById('root')).render(
-    <StrictMode>
-        <BrowserRouter>
-            <Body>
-                <Gallery/>
-            </Body>
-        </BrowserRouter>
-    </StrictMode>,
-)
+export default Gallery

@@ -9,9 +9,6 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        news: resolve(__dirname, 'news.html'),
-        gallery: resolve(__dirname, 'gallery.html'),
-        contacts: resolve(__dirname, 'contacts.html'),
       }
     }
   },

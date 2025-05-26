@@ -4,19 +4,6 @@
     gap: 1rem;
 }
 
-.article {
-    margin-bottom: 30px;
-}
-
-.title {
-    margin-bottom: 0px;
-    padding-left: 1rem;
-}
-
-.date {
-    padding-left: 1rem;
-}
-
 .card, .card-footer, .card-footer:last-child {
     border-radius: 0px;
     border: none;
