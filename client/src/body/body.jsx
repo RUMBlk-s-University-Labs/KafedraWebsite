@@ -11,7 +11,14 @@ function Body({children}) {
           <h1 className="text-white logo-title">Кафедра суспільних наук НУ "Освітній Простір"</h1>
           <nav className="bg-dua navbar navbar-expand-lg navbar-light bg-unua">
             <div className="container-fluid">
-              <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+              <button className="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbar"
+                aria-controls="navbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
                 <span className="navbar-toggler-icon"></span>
               </button>
               <div className="collapse navbar-collapse" id="navbar">
@@ -38,7 +45,8 @@ function Body({children}) {
       <main className='margin d-flex'>
         {children}
       </main>
-      <footer className="bg-unua text-white py-1 mt-auto text-center margin">© 2025 Кафедра суспільних наук НУ "Освітній Простір"</footer>
+      <footer className="bg-unua text-white py-1 mt-auto text-center margin">
+        © 2025 Кафедра суспільних наук НУ "Освітній Простір"</footer>
     </div>
   )
 }
