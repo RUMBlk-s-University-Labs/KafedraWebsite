@@ -9,19 +9,6 @@ body {
   max-height: 100%;
 }
 
-header {
-  background-color: #005500;
-  display: grid;
-  grid-template-columns: min-content 1fr;
-  box-sizing: border-box;
-  align-items: center;
-}
-  
-main {
-  margin-top: 150px;
-  flex-grow: 1;
-}
-
 p {
   text-indent: 2rem;
   text-align: justify;
@@ -58,13 +45,6 @@ h1, h2, h3, h4, h5, h6 {
 .margin {
   margin-left: 32px;
   margin-right: 32px;
-}
-
-.logo {
-  width: 192px;
-  margin: 4px;
-  margin-left: 8px;
-  margin-right: 8px;
 }
 
 .bg-unua {
@@ -106,18 +86,6 @@ h1, h2, h3, h4, h5, h6 {
   gap: 30px;
 }
 
-.slider-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-  height: 75%;
-}
-
 @media (max-width: 992px) {
   .margin {
     margin-left: 8px;
@@ -125,25 +93,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@media (max-width: 768px) {
-  .logo {
-    width: 48px;
-  }
-
-  .logo-title {
-    display: none;
-  }
-
-  .nav-item:hover {
-    transform: scale(1.05);
-  }
-}
-
 @media (max-width: 499px) {
-  main {
-    margin-top: 75px;
-  }
-
   .imgbox > img {
     width: 100%;
     height: auto;
@@ -151,11 +101,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (min-width: 500px) and (max-width: 749px) {
-
-  main {
-    margin-top: 75px;
-  }
-
   .imgbox > img {
     width: 100%;
     height: auto;
@@ -163,21 +108,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (min-width: 750px) and (max-width: 949px) {
-
-  main {
-    margin-top: 175px;
-  }
-
   .imgbox > img {
     height: 238px;
   }
 }
 
 @media (min-width: 950px) and (max-width: 1199px) {
-  main {
-    margin-top: 200px;
-  }
-
   .imgbox > img {
     height: 300px;
   }

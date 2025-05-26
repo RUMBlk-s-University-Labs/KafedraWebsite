@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Carousel } from "react-bootstrap";
+import './index.css'
 
 function Index() {
     return (

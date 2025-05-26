@@ -1,12 +1,12 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
+import '../main.css'
 import './gallery.css'
-import Body from './Body.jsx'
+import Body from '../body/body.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, useSearchParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import PageSwitch from './pageSwitch.jsx'
+import PageSwitch from '../pageSwitch/pageSwitch.jsx'
 
 function Gallery() {
     const [searchParams, setSearchParams] = useSearchParams();

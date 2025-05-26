@@ -1,6 +1,5 @@
-import './index.css'
+import '../main.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './news.css'
 
 function PageSwitch({page, pages, goToPage}) {
     return (

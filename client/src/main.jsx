@@ -1,8 +1,8 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
-import Body from './Body.jsx'
-import Index from './index.jsx'
+import './main.css'
+import Body from './body/body.jsx'
+import Index from './index/index.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter } from 'react-router-dom';
 
